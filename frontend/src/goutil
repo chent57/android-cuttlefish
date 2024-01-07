@@ -24,7 +24,7 @@ if [[ "$version" > "1.15" ]]; then
   # Temporary solution until https://github.com/golang/go/issues/28194 is fixed
   # in order to retry failed fetch requests.
   # GOPROXY fallback was added in Go 1.15
-  export GOPROXY="proxy.golang.org|proxy.golang.org|direct"
+  export GOPROXY="https://goproxy.cn,direct"
 fi
 
 $GOBIN "$@"
